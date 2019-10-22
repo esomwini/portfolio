@@ -1,0 +1,126 @@
+body {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./container/images/buildingblocks.jpeg);
+	background-size: cover;
+	background-position: center;
+	min-height: 1000px;
+}
+
+.navbar {
+	background: #16222a; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #3a6073, #16222a); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		#3a6073,
+		#16222a
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navlinks:hover {
+	color: rgb(184, 145, 48);
+}
+.content {
+	margin: 0 auto;
+	display: block;
+	background: transparent;
+	justify-content: left;
+	align-items: left;
+	width: 70%;
+	height: 300px;
+	color: white;
+	margin-top: 120px;
+	padding-top: 1px;
+}
+.content-text-bold {
+	font-weight: 500;
+	font-size: 30px;
+	color: white;
+	line-height: 0.2rem;
+	letter-spacing: 0.4rem;
+	text-transform: capitalize;
+}
+.content-text-normal {
+	font-size: 15px;
+	color: white;
+	margin-top: 70px;
+	line-height: 0.2rem;
+	letter-spacing: 0.1rem;
+}
+.content-button {
+	width: 120px;
+	height: 40px;
+	color: white;
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 16px;
+	opacity: 0.9;
+	text-transform: capitalize;
+}
+.content-button:hover {
+	color: white;
+	background: rgb(173, 137, 45);
+	outline: none;
+	opacity: none;
+	border: none;
+}
+.content-button:focus {
+	outline: none;
+	background: rgb(173, 137, 45);
+}
+.section {
+	padding-top: 4vw;
+	padding-bottom: 4vw;
+}
+.contactbtn {
+	width: 120px;
+	height: 40px;
+	background: transparent;
+	border: 2px solid black;
+	border-radius: 4px;
+	color: black;
+	font-size: 15px;
+	font-weight: 400;
+}
+.contactbtn:hover {
+	background: rgb(184, 145, 48);
+	color: white;
+	outline: none;
+	border: none;
+}
+.contactbtn:focus {
+	outline: none;
+	border: none;
+	background: rgb(184, 145, 48);
+	color: white;
+}
+.input-field input:focus + label {
+	color: rgb(184, 145, 48) !important;
+}
+textarea.materialize-textarea:focus + label {
+	color: rgb(184, 145, 48) !important;
+}
+.input-field .prefix {
+	color: black !important;
+}
+input[type=email]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+	border-color: rgb(184, 145, 48);
+	box-shadow: none;
+}
+.tabs .indicator {
+	background-color: rgb(184, 145, 48);
+}
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+	background: transparent;
+}
+@media screen and (max-width: 670px) {
+	header {
+		min-height: 500px;
+	}
+}
